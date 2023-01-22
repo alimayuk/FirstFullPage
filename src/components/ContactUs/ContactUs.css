@@ -1,0 +1,53 @@
+
+.contactBoxs{
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    grid-template-columns: repeat(3,2fr);
+    margin: 3rem auto;
+}
+.Contact>:first-child{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(255, 245, 245);
+    padding: 2rem;;
+}
+
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTitle{
+    text-transform: uppercase;
+    margin: 1rem auto;
+}
+
+.cardText{
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+
+.cardButton{
+    margin: 1rem auto auto auto;
+    text-transform: uppercase;
+}
+
+.icons{
+    font-size: 3rem;
+    color: red;
+}
+
+@media only screen and (max-width:600px){
+    .contactBoxs{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+}

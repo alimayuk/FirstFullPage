@@ -1,0 +1,166 @@
+.home {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.squareHome {
+    border: 1px solid black;
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 35, 255, 1) 50%);
+}
+
+.leftHeader {
+    display: flex;
+    align-items: center;
+}
+
+.leftHeader>span {
+    margin-left: 2vh;
+    font-weight: bold;
+}
+
+.bodyText {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    line-height: 5rem;
+}
+
+.leftFooter {
+    margin-top: 2rem;
+}
+
+.leftFooter>a {
+    font-weight: bold;
+    color: black;
+    margin-left: 2.5rem;
+    position: relative;
+    font-size: 1.3rem;
+
+}
+
+.leftFooter>a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background: black;
+    transition: all .45s;
+}
+
+
+.leftFooter>a:hover::before {
+    width: 100%;
+}
+
+.homeLeft{
+    width: 50%;
+}
+.homeRight{
+    width: 50%;
+    display: flex;
+    position: relative;  
+    justify-content: center;
+    align-items: center; 
+}
+
+ 
+.rightdolarPhoto{
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+    width: 100%;
+    z-index: 9;
+}
+
+.line{
+    display: block;
+    rotate: 360deg;
+    margin-top: 4rem;
+}
+
+.homeFooter{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.spanhfl{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(176, 22, 22);
+}
+.womenPh{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 3rem;
+}
+
+.hfl{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 50%;
+}
+
+.hfl>span{
+    margin-left: 5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.lineProps{
+    display: grid;
+    
+}
+
+.lineProps>li{
+    display: flex;
+    grid-row: auto;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+
+.lineProps>li:not(:first-child){
+    margin-top: 2rem;
+}
+
+
+@media only screen and (max-width:600px){
+
+    .home{
+        display: grid;
+        grid-template-columns: repeat(auto,max-width);
+        row-gap: 2rem;
+        justify-content:center;
+    }
+
+    .homeRight{
+        width: 100%;
+    }
+    .homeLeft{
+        width: 100%;
+    }
+
+    .homeFooter{
+        width: 100%;
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    .hfl{
+        width: 100%;
+    }
+
+
+
+}

@@ -1,0 +1,61 @@
+
+
+.allTeam{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 2rem;
+}
+.teamCard{
+    border-radius: 20%;
+    background: rgba(180, 151, 180, 0.267);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainHead{
+    text-align: center;
+    font-size: 4rem;
+    margin: 4rem auto;
+}
+
+.titleT{
+    margin: 1.5rem auto 1rem auto;
+    font-size: 1.2rem;
+}
+
+.nameteam{
+    font-weight: bold;
+}
+.teamImg{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.desc{
+    margin-bottom: 1rem;
+    opacity: .8;
+}
+
+.sociall>a{
+    margin-left: 1rem;
+    color: rgb(145, 140, 140);
+}
+
+.sociall>a:hover{
+    color: rgb(121, 119, 119);
+}
+
+@media only screen and (max-width:600px){
+    .allTeam{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+
+    
+}

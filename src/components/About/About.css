@@ -1,0 +1,119 @@
+.about {
+    margin-top: 7rem;
+}
+
+.aboutop {
+    text-align: center;
+}
+
+.ath {
+    font-size: 4rem;
+    margin: 2rem auto;
+}
+
+.atp {
+    opacity: .7;
+    font-size: 1.6rem;
+}
+
+.aboutbot {
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.infoOf {
+    max-width: 100%;
+}
+
+.aboutBox {
+    border: 3px solid rgb(255, 255, 255);
+    height: 15rem;
+    width: 100%;
+    margin: 3rem;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.boxs {
+    display: flex;
+    position: absolute;
+}
+
+
+
+.aboutBox>.boxHead {
+    font-weight: bold;
+    color: black;
+    font-size: 4rem;
+}
+
+.aboutBox > .boxSub{
+    font-weight: bold;
+    color: black;
+}
+
+
+.infodetailed{
+    margin: 4rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,auto);
+}
+
+.detailedBox{
+    border-radius: 9%;
+    background: rgb(142, 139, 139);
+    padding: 3rem;
+}
+
+.icond{
+    font-size: 3rem;
+}
+
+.detailhead{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 1rem auto;
+}
+
+.detailsub{
+    opacity: .8;
+}
+
+@media only screen and (max-width:600px){
+
+    .about{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+
+    .boxs{
+        display: grid;
+        position: relative;
+    }
+
+    .infoOf{
+        display: none; 
+    }
+
+    .infodetailed{
+        display: grid;
+        grid-template-columns: repeat(2,auto) !important;
+    }
+
+    
+}

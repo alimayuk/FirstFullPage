@@ -1,0 +1,41 @@
+.footer{
+  margin: 6rem auto;
+}
+
+.aboutFooter{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-items: center;
+}
+
+.aboutFooter>.fa>ul>li>a{
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  color: rgb(70, 73, 70);
+}
+
+.aboutFooter>.fa>ul>li>a:hover{
+  color: rgb(30, 31, 30);
+}
+
+.faH{
+  margin-bottom: 1rem;
+}
+
+hr{
+margin: 2rem auto;
+}
+
+.lastp{
+  opacity: 0.9;
+}
+
+.lastcom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastcom>.sociall>a{
+  font-size: 2rem;
+  margin-left: 2rem;
+}
